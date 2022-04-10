@@ -26,8 +26,8 @@ pipeline{
                   steps{
                         sh "docker login -u sandy1791994 -p mAnj@0606g"
                         sh "docker pull sandy1791994/docwarimage:1.0"
-                        sh "docker rm -f trail"
-                        sh "docker run -d -p 8084:8080 --name trail1 sandy1791994/docwarimage:1.0"
+                        //sh "docker rm -f trail"
+                        sh "docker run -d -p 8085:8080 --name trail1 sandy1791994/docwarimage:1.0"
                   }
             }
       }
