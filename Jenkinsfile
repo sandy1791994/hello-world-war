@@ -14,5 +14,7 @@ pipeline{
             stage('docker image build'){
                   steps{
                         sh "docker build -t sandy1791994/docwarimage:1.0 ."
+                  }
+            }
       }
       }
