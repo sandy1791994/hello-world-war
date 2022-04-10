@@ -25,7 +25,7 @@ pipeline{
             stage('deploy'){
                   agent { label 'slave2' }
                   steps{
-                        sh "docker run -d -p  sandy1791994/docwarimage:1.0"
+                        sh "docker run -d sandy1791994/docwarimage:1.0"
                   }
             }
       }
