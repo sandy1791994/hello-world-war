@@ -25,7 +25,7 @@ pipeline{
             stage('deploy'){
                   agent { label 'slave2' }
                   steps{
-                        sh "docker run -d -p 8090:8080 sandy1791994/docwarimage:1.0"
+                        sh "docker run -d -p 8055:8080 sandy1791994/docwarimage:1.0"
                   }
             }
       }
