@@ -16,5 +16,9 @@ pipeline{
                         sh "docker build -t sandy1791994/docwarimage:1.0 ."
                   }
             }
+            stage('docker image push'){
+                  steps{
+                        sh "docker login -u sandy1791994 -p mAnj@0606g"
+                        sh "docker push sandy1791994/docwarimage:1.0
       }
       }
