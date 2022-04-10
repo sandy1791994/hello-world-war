@@ -26,7 +26,7 @@ pipeline{
                   steps{
                         sh "docker login -u sandy1791994 -p mAnj@0606g"
                         sh "docker pull sandy1791994/docwarimage:1.0"
-                        sh "docker rm -f \$(docker ps  -a -q --filter ancestor=sandy1791994/docwarimage:1.0)"
+                        sh "docker rm -f \$(docker ps -q --filter ancestor=sandy1791994/docwarimage:1.0)"
                         sh "docker run -d -p 8084:8080 sandy1791994/docwarimage:1.0"
                   }
             }
