@@ -1,5 +1,5 @@
 pipeline{ 
-      docker { image 'ubuntumaven:1.0' }
+      agent { docker 'ubuntumaven:1.0' }
       stages{
       stage('build'){
                   steps{
@@ -10,5 +10,6 @@ pipeline{
                   }
       }
       }
+      
 
       
